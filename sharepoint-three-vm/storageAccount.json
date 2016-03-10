@@ -14,12 +14,13 @@
     "storageAccountType": {
       "type": "string",
       "allowedValues": [
+		"Standard_LRS",
         "Premium_LRS"
       ],
       "metadata": {
         "Description": "The type of the Storage Account created"
       },
-      "defaultValue": "Premium_LRS"
+      "defaultValue": "Standard_LRS"
     }
   },
   "resources": [
@@ -31,16 +32,8 @@
       "properties": {
         "accountType": "[parameters('storageAccountType')]"
       }
-    },
-    {
-      "type": "Microsoft.Storage/storageAccounts",
-      "name": "[concat(parameters('storageAccountNamePrefix'),'2')]",
-      "apiVersion": "2015-06-15",
-      "location": "[parameters('location')]",
-      "properties": {
-        "accountType": "Standard_LRS"
-      }
     }
+    
   ],
   "outputs": {
     "storageAccountId": {

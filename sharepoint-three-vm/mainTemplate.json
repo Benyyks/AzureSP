@@ -212,7 +212,7 @@
     "adVMName": "[concat(parameters('sharepointFarmName'),'-ad')]",
     "sqlVMName": "[concat(parameters('sharepointFarmName'),'-sql')]",
     "spVMName": "[concat(parameters('sharepointFarmName'),'-sp')]",
-    "AssetLocation": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/sharepoint-three-vm/dsc",
+    "AssetLocation": "https://raw.githubusercontent.com/Benyyks/AzureSP/master/sharepoint-three-vm/dsc",
     "LBFE": "LBFE",
     "LBBE": "LBBE",
     "RDPNAT": "RDP",

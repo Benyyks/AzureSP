@@ -687,26 +687,16 @@
           "sqlNicName": {
             "value": "[variables('sqlNicName')]"
           },
-          "sqlModulesURL": {
+          "sqlPrepareModulesURL": {
             "value": "[variables('sqlModulesURL')]"
           },
-          "sqlConfigurationFunction": {
+          "sqlPreparationFunction": {
             "value": "[variables('sqlConfigurationFunction')]"
           },
-          "domainName": {
-            "value": "[parameters('domainName')]"
-          },
-          "sqlServerServiceAccountUserName": {
-            "value": "[parameters('sqlServerServiceAccountUserName')]"
-          },
-          "sharePointSetupUserAccountUserName": {
-            "value": "[parameters('sharePointSetupUserAccountUserName')]"
-          },
-          "sqlServerServiceAccountPassword": {
-            "value": "[parameters('sqlServerServiceAccountPassword')]"
-          },
-          "sharePointSetupUserAccountPassword": {
-            "value": "[parameters('sharePointSetupUserAccountPassword')]"
+		  "DNSServerAddress": {
+            "value": [
+              "[parameters('adNicIPAddress')]"
+            ]
           }
         }
       }
